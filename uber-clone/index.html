@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earn Money by Driving or Get a Ride Now | Uber Germany</title>
+    <link href="https://cdn.tailwindcss.com" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="script.js" defer></script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-white">
+    <!-- Skip to main content link for accessibility -->
+    <a href="#main" class="sr-only focus:not-sr-only">Skip to main content</a>
+
+    <!-- Header -->
+    <header class="fixed w-full bg-white z-50 border-b">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold">Uber</a>
+            
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="ride.html" class="text-gray-700 hover:text-black">Ride</a>
+                <a href="drive.html" class="text-gray-700 hover:text-black">Drive</a>
+                <a href="business.html" class="text-gray-700 hover:text-black">Business</a>
+                <a href="ubereats.html" class="text-gray-700 hover:text-black">Uber Eats</a>
+                <a href="login.html" class="text-gray-700 hover:text-black">Sign In</a>
+                <a href="#" class="bg-black text-white px-4 py-2 rounded-full hover:bg-gray-800">Sign Up</a>
+            </div>
+
+            <!-- Mobile menu button -->
+            <button id="mobile-menu-button" class="block md:hidden p-2 text-gray-500 hover:text-gray-700 focus:outline-none">
+                <i class="fas fa-bars text-3xl"></i>
+            </button>
+        </nav>
+        
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t shadow-lg fixed w-full top-16 left-0 z-50">
+            <div class="container mx-auto px-4 py-2">
+                <a href="ride.html" class="block py-2 text-gray-700 hover:text-black">Ride</a>
+                <a href="drive.html" class="block py-2 text-gray-700 hover:text-black">Drive</a>
+                <a href="business.html" class="block py-2 text-gray-700 hover:text-black">Business</a>
+                <a href="ubereats.html" class="block py-2 text-gray-700 hover:text-black">Uber Eats</a>
+                <a href="login.html" class="block py-2 text-gray-700 hover:text-black">Sign In</a>
+                <a href="#" class="block py-2 text-black font-medium">Sign Up</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main" class="pt-16">
+        <!-- Hero Section -->
+        <section class="relative h-screen">
+            <div class="absolute inset-0">
+                <img src="https://images.pexels.com/photos/3764984/pexels-photo-3764984.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                     alt="Uber background" 
+                     class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+            </div>
+
+            <div class="relative container mx-auto px-4 h-full flex items-center">
+                <div class="max-w-xl text-white">
+                    <h1 class="text-5xl font-bold mb-6">Earn Money by Driving or Get a Ride Now</h1>
+                    <div class="bg-white rounded-lg p-4 shadow-lg">
+                        <div class="flex flex-col space-y-4">
+                            <input type="text" 
+                                   placeholder="Enter pickup location" 
+                                   class="w-full p-3 border rounded text-gray-700 focus:outline-none focus:ring-2 focus:ring-black">
+                            <input type="text" 
+                                   placeholder="Enter destination" 
+                                   class="w-full p-3 border rounded text-gray-700 focus:outline-none focus:ring-2 focus:ring-black">
+                            <button class="w-full bg-black text-white py-3 rounded-lg hover:bg-gray-800 transition duration-200">
+                                See prices
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="py-16 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-12">Our Services</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Reserve Card -->
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-200">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2921/2921222.png" 
+                             alt="Reserve" 
+                             class="w-16 h-16 mx-auto mb-4">
+                        <h3 class="text-xl font-semibold text-center mb-2">Reserve</h3>
+                        <p class="text-gray-600 text-center">Reserve your ride in advance.</p>
+                    </div>
+
+                    <!-- Ride Card -->
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-200">
+                        <img src="https://cdn-icons-png.flaticon.com/512/9788/9788416.png" 
+                             alt="Ride" 
+                             class="w-16 h-16 mx-auto mb-4">
+                        <h3 class="text-xl font-semibold text-center mb-2">Ride</h3>
+                        <p class="text-gray-600 text-center">Go anywhere with Uber.</p>
+                    </div>
+
+                    <!-- Drive Card -->
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-200">
+                        <img src="https://cdn-icons-png.flaticon.com/512/3774/3774229.png" 
+                             alt="Drive" 
+                             class="w-16 h-16 mx-auto mb-4">
+                        <h3 class="text-xl font-semibold text-center mb-2">Drive</h3>
+                        <p class="text-gray-600 text-center">Make money on your schedule.</p>
+                    </div>
+
+                    <!-- Business Card -->
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-200">
+                        <img src="https://cdn-icons-png.flaticon.com/512/1968/1968666.png" 
+                             alt="Business" 
+                             class="w-16 h-16 mx-auto mb-4">
+                        <h3 class="text-xl font-semibold text-center mb-2">Business</h3>
+                        <p class="text-gray-600 text-center">Transform your operations.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Download Apps Section -->
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="flex flex-col md:flex-row items-center justify-between">
+                    <div class="md:w-1/2 mb-8 md:mb-0">
+                        <h2 class="text-3xl font-bold mb-4">Download the app</h2>
+                        <p class="text-gray-600 mb-8">Get the best Uber experience with our mobile app</p>
+                        <div class="flex space-x-4">
+                            <a href="#" class="block">
+                                <img src="https://d3i4yxtzktqr9n.cloudfront.net/web-sites-v2/app-store-badge.svg" 
+                                     alt="Download on App Store" 
+                                     class="h-12">
+                            </a>
+                            <a href="#" class="block">
+                                <img src="https://d3i4yxtzktqr9n.cloudfront.net/web-sites-v2/play-store-badge.svg" 
+                                     alt="Get it on Google Play" 
+                                     class="h-12">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2">
+                        <img src="https://images.pexels.com/photos/7438102/pexels-photo-7438102.jpeg" 
+                             alt="Uber App Screenshot" 
+                             class="rounded-lg shadow-xl">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="font-semibold mb-4">Company</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">About us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Our offerings</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Newsroom</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Investors</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold mb-4">Products</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Ride</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Drive</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Deliver</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Business</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold mb-4">Support</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Help Center</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Safety</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Terms</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold mb-4">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 pt-8 border-t border-gray-800">
+                <p class="text-gray-400">&copy; 2023 Uber Technologies Inc.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cookie Notice -->
+    <div id="cookie-notice" class="fixed bottom-0 left-0 right-0 bg-black bg-opacity-90 text-white p-4">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <p class="text-sm mb-4 md:mb-0">We use cookies to personalize your experience. Learn more in our <a href="#" class="underline">Cookie Notice</a>.</p>
+                <div class="flex space-x-4">
+                    <button class="px-4 py-2 bg-white text-black rounded hover:bg-gray-200" onclick="acceptCookies()">Accept</button>
+                    <button class="px-4 py-2 border border-white rounded hover:bg-white hover:text-black" onclick="rejectCookies()">Reject</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
